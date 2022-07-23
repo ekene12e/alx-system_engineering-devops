@@ -2,7 +2,7 @@
 #print best school and hi
 
 x=1
-while [ $x -ne 11 ]
+while [ $x -lt 11 ]
 do
   if [ $x -eq 9 ]
   then
