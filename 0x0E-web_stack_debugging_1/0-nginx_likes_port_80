@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Fix nginx to listen to port 80
-sudo apt-get install nginx -y
-sudo sed -i 's/8080 default_server/80 default_server/g' /etc/nginx/sites-enabled/default
+sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
 sudo service nginx restart
